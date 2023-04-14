@@ -1,0 +1,223 @@
+@media (max-width:1140px) {
+  .header {
+    grid-template-columns: 140px auto;
+
+    &__contacts {
+      display: none;
+    }
+  }
+
+  .container {
+    margin: 0 50px;
+  }
+
+  .footer {
+    padding-top: 43px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 30px;
+
+    &__bottom {
+      margin-top: 19px;
+      grid-column: span none;
+      text-align: start;
+    }
+
+    &__block__right {
+      text-align: start;
+    }
+
+    &__item {
+      &__social {
+        justify-content: start;
+        width: 19px;
+        height: 19px;
+        gap: 15px;
+      }
+
+      &__address {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .red-ball-mini,
+  .purple-ball,
+  .red-ball {
+    display: none;
+  }
+}
+
+@media (max-width: 810px) {
+  .header {
+    grid-template-columns: auto;
+
+    &__logo,
+    &__sertefication {
+      display: none;
+    }
+  }
+
+  .block {
+    margin-top: 16px;
+    grid-template-columns: auto;
+
+    &__left__text {
+      margin-top: 16px;
+    }
+
+    &__right {
+      margin-left: 0;
+      margin-top: 46px;
+      text-align: left;
+
+      &__list {
+        display: none;
+
+        &__mobile {
+          margin-top: 18px;
+          display: grid;
+          grid-template-columns: 115px auto;
+          row-gap: 14px;
+          column-gap: 9px;
+          text-transform: uppercase;
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          letter-spacing: 0.05em;
+
+          &__item {
+            display: flex;
+          }
+
+          &__item::before {
+            margin-right: 5px;
+            content: "";
+            display: block;
+            width: 10px;
+            height: 1px;
+            background: linear-gradient(to right, #FCB045, #FD1D1D);
+            align-self: center;
+          }
+        }
+      }
+    }
+  }
+
+  .subtitle {
+    margin-left: 0;
+    font-weight: 500;
+
+    &__desc {
+      text-transform: none;
+    }
+  }
+}
+
+@media (max-width:425px) {
+  .container {
+    margin: 0 16px;
+  }
+
+  .header {
+    padding-top: 13px;
+
+    &__nav {
+      text-transform: uppercase;
+
+      &__list {
+        margin-top: 6px;
+        gap: 12px;
+      }
+
+      &__item {
+        font-size: 13px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .btn,
+  .purple-light {
+    display: none;
+  }
+
+  .purple-light-main {
+    top: 55%;
+    display: block;
+    top: 100px;
+    right: 0;
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+  }
+
+  .red-light {
+    background: url('../images/red-light.png');
+    width: 210px;
+    height: 210px;
+    top: 53%;
+  }
+
+  .main {
+    margin-top: 16px;
+    position: relative;
+    padding-bottom: 57px;
+    background: url('../images/glass.png');
+    background-size: cover;
+  }
+
+  .title {
+    margin-top: 41px;
+    font-size: 36px;
+    line-height: 44px;
+
+    &__desc {
+      font-size: 36px;
+      line-height: 44px;
+    }
+  }
+
+  .footer {
+    &__list {
+      font-size: 14px;
+      line-height: 17px;
+
+      &__middle {
+        grid-template-columns: 125px auto;
+        column-gap: 23px;
+      }
+
+      &__right {
+        gap: 12px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    &__item2 {
+      order: -1;
+    }
+
+    &__item3 {
+      order: -2;
+    }
+
+    &__item4 {
+      order: -3;
+    }
+
+    &__item1 {
+      order: -4;
+    }
+
+    &__subtitle {
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.05em;
+    }
+  }
+}
