@@ -9,7 +9,7 @@ module.exports = (env) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    publicPath: '/',
+    publicPath: '/Welbex/',
     clean: true,
   },
   module: {
@@ -25,10 +25,16 @@ module.exports = (env) => ({
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/img/[name].[hash][ext][query]'
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'assets/fonts/[name].[hash][ext][query]'
+        },
       },
       {
         test: /\.(?:js|mjs|cjs)$/,
