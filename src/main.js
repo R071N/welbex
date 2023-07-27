@@ -11,12 +11,12 @@ const headerRedBall = document.querySelector('.red-ball');
 const headerRedBallMini = document.querySelector('.red-ball-mini');
 
 
-const logotype = require('/src/assets/images/logo-welbex.png');
-const redLight = require('/src/assets/images/red-light.png');
-const purpleLight = require('/src/assets/images/purple-light.png');
-const purpleBall = require('/src/assets/images/purple-ball.png');
+const logotype = require('/src/assets/images/logo-welbex.webp');
+const redLight = require('/src/assets/images/red-light.webp');
+const purpleLight = require('/src/assets/images/purple-light.webp');
+const purpleBall = require('/src/assets/images/purple-ball.webp');
 const redBall = require('/src/assets/images/red-ball.png');
-const redBallMini = require('/src/assets/images/red-ball-mini.png');
+const redBallMini = require('/src/assets/images/red-ball-mini.webp');
 
 logo.src = logotype;
 headerLight.src = purpleLight;
