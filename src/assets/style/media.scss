@@ -12,13 +12,14 @@
   }
 
   .footer {
-    padding-top: 43px;
+    margin-top: 43px;
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     row-gap: 30px;
 
     &__bottom {
       margin-top: 19px;
+      margin-bottom: 60px;
       grid-column: span none;
       text-align: start;
     }
@@ -141,33 +142,19 @@
   }
 
   .btn,
-  .purple-light {
-    display: none;
-  }
-
-  .purple-light-main {
-    top: 55%;
-    display: block;
-    top: 100px;
-    right: 0;
-    background: #833AB4;
-    opacity: 0.5;
-    filter: blur(196px);
-  }
-
+  .purple-light,
   .red-light {
-    background: url('../images/red-light.png');
-    width: 210px;
-    height: 210px;
-    top: 53%;
+    display: none;
+    visibility: hidden;
   }
 
   .main {
     margin-top: 16px;
     position: relative;
     padding-bottom: 57px;
-    background: url('../images/glass.png');
+    background: url('../images/bg-mobile.webp');
     background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .title {
@@ -179,6 +166,11 @@
       font-size: 36px;
       line-height: 44px;
     }
+  }
+
+  .block__right__list__mobile__item {
+    color: #e4e5eaf8;
+    font-size: 12px;
   }
 
   .footer {
@@ -196,6 +188,10 @@
         font-size: 16px;
         line-height: 19px;
       }
+    }
+
+    &__block__left {
+      margin-top: 45px;
     }
 
     &__item2 {

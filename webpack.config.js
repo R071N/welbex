@@ -9,7 +9,8 @@ module.exports = (env) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.[contenthash].js',
-    publicPath: '/welbex/',
+    /** Для GitHub pages **/
+    // publicPath: '/welbex/',
     clean: true,
   },
   module: {
